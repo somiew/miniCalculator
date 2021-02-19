@@ -153,7 +153,7 @@ class Ui_MainWindow(object):
             displayValue = ''
         
         elif i == 'enter':
-            if displayValue.endswith('+') or displayValue.endswith('-') or displayValue.endswith('*') or displayValue.endswith('/'):
+            if displayValue.endswith('+') or displayValue.endswith('-') or displayValue.endswith('*') or displayValue.endswith('/') or displayValue=='':
                 return
             dvsum = eval(displayValue)
             displayValue = str(dvsum)
